@@ -39,7 +39,7 @@ app.post("/submit", async (req, res) => {
 
     const mailOptions = {
         from: 'landsworthrealty2020@gmail.com',
-        to: email,
+        to: ['landsworthrealty2020@gmail.com', email],
         subject: subject,
         text: text,
     };
@@ -68,7 +68,7 @@ app.post("/submit1", async (req, res) => {
 
     const mailOptions = {
         from: 'landsworthrealty2020@gmail.com',
-        to: email,
+         to: ['landsworthrealty2020@gmail.com', email],
         subject: subject,
         text: text,
     };
