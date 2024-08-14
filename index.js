@@ -34,7 +34,7 @@ app.post("/submit", async (req, res) => {
     const { name, email, mobile } = req.body;
     console.log("req.body", req.body);
 
-    const subject = 'Form Submission';
+    const subject = 'Client Submission';
     const text = `Thank you for your submission!\n\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}`;
 
     const mailOptions = {
