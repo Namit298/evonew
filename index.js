@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'landsworthrealty2020@gmail.com,',
+      user: 'landsworthrealty2020@gmail.com',
       pass: 'uuau vnse bzxc toti', // This should be stored securely
     }
 });
@@ -38,7 +38,7 @@ app.post("/submit", async (req, res) => {
     const text = `Thank you for your submission!\n\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}`;
 
     const mailOptions = {
-        from: 'coderamit32@gmail.com',
+        from: 'landsworthrealty2020@gmail.com',
         to: email,
         subject: subject,
         text: text,
@@ -63,11 +63,11 @@ app.post("/submit1", async (req, res) => {
     const { name, email, mobile } = req.body;
     console.log("req.body", req.body);
 
-    const subject = 'Form Submission';
+    const subject = 'Client Submission';
     const text = `Thank you for your submission!\n\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}`;
 
     const mailOptions = {
-        from: 'coderamit32@gmail.com',
+        from: 'landsworthrealty2020@gmail.com',
         to: email,
         subject: subject,
         text: text,
