@@ -8,6 +8,8 @@ const bodyParser = require("body-parser");
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Configure the transporter
 const transporter = nodemailer.createTransport({
